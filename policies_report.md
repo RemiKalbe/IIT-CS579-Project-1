@@ -44,3 +44,19 @@ Educational research involving data collection from the Stack Exchange Network m
 > -- <cite>(Section: Content Scraping).</cite>
 
 Therefore, automated data collection for educational research is permissible under the condition that it does not contravene any stipulations of the Public Network Terms of Service or the AUP itself. This includes ensuring that the collection and use of data do not engage in or facilitate illegal use, spam, phishing, doxing, dissemination of malicious URLs, identity theft, disruptions and exploits, unauthorized use of intellectual property, mass registration and automation, distribution of sexually explicit material, framing, mirroring, or content scraping that breaches these provisions.
+
+## API Terms of Use (TOS) Review
+
+In utilizing the Stack Exchange, Inc. API Services for educational research or development, adherence to the outlined conditions in the API Terms of Use is required:
+
+### Attribution Necessity
+
+For applications leveraging the API for data collection or display, a clear visual indication is mandated, as per the directive that:
+> All Applications must ensure they visually indicate that the Stack Exchange Network is the source of the content provided through the API Services.
+
+### Trademark and Brand Guidelines Compliance
+
+When employing Stack Exchange logos and branding within the application, usage must remain within the bounds of identification purposes only, adhering to the guideline that:
+> Stack Exchange logos, branding, and other copyrighted content returned by the API may be used unmodified for the purposes of identification.
+
+These provisions from the API Terms of Use ensure that the Stack Exchange Network's content and trademarks are properly attributed and used within the framework of educational research or application development, maintaining the integrity and recognition of the Stack Exchange brand.
