@@ -6,7 +6,8 @@ params = {
     'tagged': 'python',       # filtering pythong posts
     'pagesize': 10,           # specify number of questions to retrieve
     'filter': 'withbody',     # include the entire question body
-    'sort': 'votes'           # sort by votes
+    'sort': 'votes',          # sort by votes
+    'key': '28240'            # have to include the API key
 }
 
 # Make a GET request to the Stack Exchange API
