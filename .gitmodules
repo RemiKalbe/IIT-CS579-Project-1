@@ -1,3 +1,0 @@
-[submodule "lib/graph-tool"]
-	path = lib/graph-tool
-	url = https://git.skewed.de/count0/graph-tool

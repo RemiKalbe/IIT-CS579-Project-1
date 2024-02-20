@@ -1,0 +1,19 @@
+[project]
+name = "IIT-CS579-Project-1"
+version = "0.1.0"
+description = "Project 1 for CS579"
+authors = ["Rémi Kalbe <me@remi.boo>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tasks]
+
+[dependencies]
+polars = ">=0.20.10,<0.21"
+rich = ">=13.7.0,<13.8"
+graph-tool = ">=2.59,<3"
+ipython = ">=8.21.0,<8.22"
+ipywidgets = ">=8.1.2,<8.2"
+
+[pypi-dependencies]
+stackapi = "*"
