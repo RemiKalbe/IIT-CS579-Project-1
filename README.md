@@ -2,62 +2,35 @@
 
 ## Installation
 
-### Python packages
-Install the required packages using the following command:
+### Dependency Management
+
+This project utilizes [pixi](https://pixi.sh/) for managing dependencies. To ensure a smooth setup, you must first install pixi. After installing pixi, navigate to the root directory of this project and run the following command:
+
 ```bash
-pip install -r requirements.txt
+pixi install
 ```
 
-### Build & install `graph-tool` 
-See if you have the required dependencies [here](https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions#manual-compilation).
-`graph-tool` is included as a submodule in this repository. To build it, run the following commands:
+> [!WARNING]
+> Please note that this project cannot run on Windows directly due to `graph-tool` not having a Windows binary available. To use this project on Windows, you would need to compile `graph-tool` yourself or leverage Windows Subsystem for Linux (WSL) for a compatible environment.
+
+### Running the Project
+
+You may either run the project in JupyterLab or in Visual Studio Code (VSCode).
+
+#### JupyterLab
+
+Simply run the following command in the terminal:
 ```bash
-./autogen.sh
+pixi run start
 ```
 
-> [!CAUTION]
-> Choose the appropriate method for your system. The following are the two most common methods.
+#### Visual Studio Code
 
-<details>
-<summary> <b>Using python virtual environnement</b> </summary>
-<br>
+When running the project in Visual Studio Code (VSCode), it's important to select the correct Python interpreter. Follow these steps:
 
-<dl>
-  <dd>
-  Activate the python environment and run the following commands:
-  <br>
-  <br>
+1. Open the command palette with `Ctrl+Shift+P`.
+2. Type and select `Python: Select Interpreter`.
+3. Click on `Enter interpreter path...`.
+4. Paste the following path: `.pixi/envs/default/python`.
 
-  ```bash
-  ./configure --prefix=$HOME/.local
-  make
-  ```
-
-  </dd>
-</dl>
-</details>
-
-<details>
-<summary> <b>Not using python virtual environnement</b> </summary>
-<br>
-
-<dl>
-  <dd>
-  Run the following commands:
-  <br>
-  <br>
-
-  ```bash
-  ./configure
-  make
-  ```
-
-  </dd>
-</dl>
-</details>
-
-
-After compilation, the module can be installed in the default Python module directory by running:
-```bash
-make install
-```
+This will set the Python interpreter to the one managed by pixi, aligning with the project's dependency management system.
